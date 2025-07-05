@@ -1,0 +1,21 @@
+Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)
+
+This project, titled **"Secure File Sharing System using AES Encryption"**, was developed by **Piyush Singh (Magnus7811)** as part of Task 3 under the Future Interns Program 2025.
+
+You are free to:
+- **Share** – copy and redistribute the code and documentation in any medium or format
+- **Adapt** – remix, transform, and build upon the code for non-commercial purposes
+
+Under the following terms:
+- **Attribution** – You must give appropriate credit, provide a link to this license, and indicate if changes were made. You may do so in any reasonable manner.
+- **NonCommercial** – You may not use the material for commercial purposes, resell, or submit for paid academic/professional purposes without explicit permission.
+
+This license applies to:
+- Source code (Python scripts, Flask app, encryption logic)
+- HTML templates, CSS styling, and SSL setup
+- Documentation and README content
+
+To view a copy of this license, visit:  
+🔗 https://creativecommons.org/licenses/by-nc/4.0/
+
+© 2025 Piyush Singh (GitHub: Magnus7811)
