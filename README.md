@@ -28,21 +28,33 @@ This ensures **data security at rest and in transit**, making it useful for secu
 ## 📁 Folder Structure
 
 secure-file-sharing/
-├── app.py # Main Flask application
-├── crypto_utils.py # AES encryption/decryption functions
-├── key_manager.py # Key generation and storage logic
-├── keys.db # SQLite DB storing file keys securely
-├── requirements.txt # Python dependencies
-├── static/ # CSS or JS files (optional styling/scripts)
-├── templates/ # HTML templates (index, upload, decrypt)
-├── uploads/ # Stores encrypted files temporarily
-├── test_assets.py # Testing logic for encryption/decryption
-├── venv/ # Virtual environment
-├── pycache/ # Compiled Python cache
-├── localhost.pem # SSL certificate (HTTPS)
-├── localhost-key.pem # SSL private key
-├── localhost+2.pem # Alternate SSL cert (multi-domain)
-├── localhost+2-key.pem # Alternate private key
+├── app.py                       # Main Flask application
+├── crypto_utils.py              # AES encryption/decryption logic
+├── key_manager.py               # Key generation & management
+├── keys.db                      # SQLite database to store keys securely
+├── requirements.txt             # Python dependencies
+├── test_assets.py               # Test script for encryption/decryption
+├── localhost.pem                # SSL certificate
+├── localhost-key.pem            # SSL private key
+├── localhost+2.pem              # Alternate SSL certificate
+├── localhost+2-key.pem          # Alternate private key
+├── __pycache__/                 # Compiled Python cache
+│   ├── crypto_utils.cpython-313.pyc
+│   └── key_manager.cpython-313.pyc
+├── static/                      # Static assets (CSS, images, JS)
+│   ├── crypto-bg.jpg
+│   ├── lock-icon.svg
+│   ├── style.css
+│   └── wget-log
+├── templates/                   # HTML templates for web interface
+│   ├── index.html
+│   ├── upload.html
+│   ├── share.html
+│   ├── password.html
+│   ├── download.html
+│   └── error.html
+├── uploads/                     # Temporarily stores encrypted files
+└── venv/                        # Python virtual environment (not included in repo)
 
 
 ---
@@ -58,31 +70,21 @@ secure-file-sharing/
 
 ---
 
-## 🚀 How to Run the Project Locally
+## 💻 Getting Started – How to Run This Project Locally
 
-### 1. Clone the Repository
+To launch the Secure File Sharing System on your local machine:
 
 ```bash
+# Step 1: Clone the repository
 git clone https://github.com/Magnus7811/FUTURE_CS_03.git
 cd FUTURE_CS_03
 
-### 2. Create & Activate Virtual Environment
-
-```bash
+# Step 2: Set up a virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-### 3. Install Required Packages
-
-```bash
+# Step 3: Install dependencies
 pip install -r requirements.txt
 
-### 4. Run Flask Application with SSL
-
-```bash
+# Step 4: Run the Flask app with SSL
 python app.py
-
-### Open in browser:
-🔗 https://localhost:5000
-
-    ⚠️ Accept the browser’s SSL warning (self-signed cert)
