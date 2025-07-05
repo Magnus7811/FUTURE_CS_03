@@ -26,7 +26,7 @@ This ensures **data security at rest and in transit**, making it useful for secu
 ---
 
 ## 📁 Folder Structure
-
+```
 secure-file-sharing/
 ├── app.py                       # Main Flask application
 ├── crypto_utils.py              # AES encryption/decryption logic
@@ -55,7 +55,7 @@ secure-file-sharing/
 │   └── error.html
 ├── uploads/                     # Temporarily stores encrypted files
 └── venv/                        # Python virtual environment (not included in repo)
-
+```
 
 ---
 
